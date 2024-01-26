@@ -1,54 +1,30 @@
-# Astro Starter Kit: Basics
+# Laura Calero - Grow Marketer, Filmmaker, and Photographer
 
-```sh
-npm create astro@latest -- --template basics
-```
+## About Me
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Hello! I'm Laura Calero, a passionate professional in **Marketing and Audiovisual Content**. With 3 years of experience, I specialize in helping brands grow and stand out through creative strategies and visual content on the internet.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Experience
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+-   Growth Marketer at Teilur (May 2023 - Present)
+-   E-commerce Store Manager at Grupo Caicedo (Dec 2022 - May 2023)
+-   Intern at Global Commerce Media (Sept 2022 - Dec 2022)
+-   Co-founder and Social Media Manager at Semiluna Joyas (Jun 2020 - Dec 2022)
 
-## 🚀 Project Structure
+## Education
 
-Inside of your Astro project, you'll see the following folders and files:
+-   Technical Professional in Audio and Video Production, Fundación Academia de Dibujo Profesional (2018-2022)
+-   Courses in digital marketing and content creation for Reels and TikTok (2020-2022)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Skills
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+-   Digital marketing strategies
+-   Production and editing of audiovisual content
+-   Managing advertising campaigns on Facebook and TikTok
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Contact Me
 
-Any static assets, like images, can be placed in the `public/` directory.
+-   Email: [lcalero904@gmail.com](mailto:lcalero904@gmail.com)
+-   Location: Cali, Colombia
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Thank you for visiting my portfolio!
