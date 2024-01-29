@@ -6,12 +6,15 @@ import { Icons } from "@/components/Icons";
   class="fixed z-50 flex h-16 w-full items-center justify-between py-6 md:h-20"
   id="header-nav"
 >
-  <a class="pl-4 text-lg font-bold md:pl-8 lg:pl-12" href="#top">Laura Calero</a
+  <a class="ml-4 text-lg font-bold md:ml-8 lg:ml-12" href="#top">Laura Calero</a
   >
-  <a class="pr-4 md:pr-8 lg:pr-12" href="#header-menu"><Icons.menu /></a>
+  <a
+    class="mr-4 cursor-pointer rounded-full bg-transparent p-2 transition-colors duration-300 hover:bg-primary md:mr-8 lg:mr-12"
+    href="#header-menu"><Icons.menu /></a
+  >
   <nav
     id="header-menu"
-    class="bg-background/90 text-foreground fixed inset-0 flex h-dvh w-full -translate-y-full flex-col items-start gap-y-8 px-4 py-20 text-4xl transition-transform duration-300 target:translate-y-0 md:items-center md:text-6xl"
+    class="fixed inset-0 flex h-dvh w-full -translate-y-full flex-col items-start gap-y-8 bg-background/90 px-4 py-20 text-4xl text-foreground transition-transform duration-300 target:translate-y-0 md:items-center md:text-6xl"
   >
     <a href="#top">Home</a>
     <a href="#experience">Experience</a>
@@ -19,7 +22,7 @@ import { Icons } from "@/components/Icons";
     <a href="#skills">Skill</a>
     <a
       href="#header-nav"
-      class="border-primary bg-primary text-foreground hover:text-primary absolute right-6 top-6 rounded-full border-2 p-2 transition-colors duration-150 hover:bg-transparent"
+      class="absolute right-6 top-6 rounded-full border-2 border-primary bg-primary p-2 text-foreground transition-colors duration-300 hover:bg-transparent hover:text-primary"
     >
       <Icons.close />
     </a>
