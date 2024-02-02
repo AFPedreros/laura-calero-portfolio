@@ -15,26 +15,32 @@ import HeaderIcons from "@/components/HeaderIcons.astro";
   >
   <nav
     id="header-menu"
-    class="fixed inset-0 flex h-dvh w-full -translate-y-full flex-col items-start gap-y-8 bg-background/90 px-4 py-20 text-4xl text-foreground transition-transform duration-300 target:translate-y-0 md:items-center md:text-6xl"
+    class="fixed inset-0 flex h-dvh w-full -translate-y-full flex-col items-start gap-y-8 bg-background/95 px-4 py-20 text-4xl text-foreground transition-transform duration-300 target:translate-y-0 md:items-center md:text-5xl"
   >
-    <a href="#top" class="transition-colors duration-300 hover:text-primary"
+    <a
+      href="#top"
+      class="uppercase tracking-wide transition-colors duration-300 hover:text-primary"
       >Home</a
     >
     <a
       href="#experience"
-      class="transition-colors duration-150 hover:text-primary">Experience</a
+      class="uppercase tracking-wide transition-colors duration-300 hover:text-primary"
+      >Experience</a
     >
     <a
       href="#projects"
-      class="transition-colors duration-150 hover:text-primary">Projects</a
+      class="uppercase tracking-wide transition-colors duration-300 hover:text-primary"
+      >Projects</a
     >
-    <a href="#skills" class="transition-colors duration-150 hover:text-primary"
+    <a
+      href="#skills"
+      class="uppercase tracking-wide transition-colors duration-300 hover:text-primary"
       >Skill</a
     >
     <HeaderIcons />
     <a
       href="#header-nav"
-      class="absolute right-6 top-6 rounded-full border-2 border-primary bg-primary p-2 text-foreground transition-colors duration-150 hover:bg-transparent hover:text-primary"
+      class="absolute right-4 top-3 rounded-full border-2 border-primary bg-primary p-2 text-foreground transition-colors duration-150 hover:bg-transparent hover:text-primary md:right-8 md:top-5 lg:right-12"
     >
       <Icons.close />
     </a>
