@@ -15,7 +15,8 @@ export default {
 			colors: {
 				background:"#000000",
 				foreground: "#FFFFFF",
-				primary: "#6A48F2",
+				primary: "#6A48F2", 
+				border:"#888888"
 			}
 		},
 	},
