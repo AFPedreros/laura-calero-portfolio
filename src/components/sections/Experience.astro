@@ -1,13 +1,12 @@
 ---
-import ExperienceCard from "./ExperienceCard.astro";
+import ExperienceCard from "@/components/ExperienceCard.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
 ---
 
 <div class="w-full">
   <section class="flex h-full w-full flex-col justify-start">
     <div class="container flex max-w-screen-lg">
-      <h2 class="mt-6 text-sm uppercase leading-8 tracking-widest">
-        Work Experience
-      </h2>
+      <SectionTitle> Work Experience </SectionTitle>
     </div>
     <ExperienceCard
       dateStart="June 2023"

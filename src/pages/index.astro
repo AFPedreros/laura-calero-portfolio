@@ -1,7 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Video from "@/components/Video.astro";
-import Experience from "@/components/Experience.astro";
+import Video from "@/components/sections/Video.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Skills from "@/components/sections/Skills.astro";
+import Content from "@/components/sections/Content.astro";
 ---
 
 <Layout
@@ -13,7 +15,14 @@ import Experience from "@/components/Experience.astro";
     <div id="experience" class="-mt-16 pt-16 md:-mt-20 md:pt-20">
       <Experience />
     </div>
-    <div class="h-screen"></div>
+    <div id="content" class="-mt-16 pt-16 md:-mt-20 md:pt-20">
+      <Content />
+    </div>
+
+    <div id="skills" class="-mt-16 pt-16 md:-mt-20 md:pt-20">
+      <Skills />
+    </div>
+    <div class="container h-screen text-foreground"></div>
 
     <!-- <WhatIDo/> -->
     <!-- <WorkBento/> -->
