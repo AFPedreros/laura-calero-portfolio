@@ -11,22 +11,22 @@ const { dateStart, dateEnd, title, company, description } = Astro.props;
 ---
 
 <div
-  class="border-border group w-full border-b transition-colors duration-300 hover:bg-primary"
+  class="group w-full border-b border-border transition-colors duration-300 hover:bg-primary"
 >
   <article
-    class="container grid h-36 max-w-screen-lg grid-cols-12 items-center text-3xl"
+    class="container flex max-w-screen-lg flex-col gap-y-2 text-xl md:grid md:h-36 md:grid-cols-12 md:items-center md:text-3xl"
   >
     <span
-      class="col-span-4 transition-colors duration-150 group-hover:text-background"
+      class="transition-colors duration-150 group-hover:text-background md:col-span-4"
       >{dateStart} - {dateEnd}</span
     >
-    <div class="col-span-8 transition-all duration-150 group-hover:hidden">
+    <div class="transition-all duration-150 group-hover:hidden md:col-span-8">
       <p class="">{title}</p>
       <p class="text-base">{company}</p>
     </div>
 
     <p
-      class="col-span-8 hidden text-base text-background transition-all duration-300 group-hover:block"
+      class="hidden text-base text-background transition-all duration-300 group-hover:block md:col-span-8"
     >
       {description}
     </p>

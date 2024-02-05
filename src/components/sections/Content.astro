@@ -1,35 +1,40 @@
 ---
 import SectionTitle from "@/components/SectionTitle.astro";
+import BentoGrid from "@/components/BentoGrid.astro";
+import BentoItem from "@/components/BentoItem.astro";
 ---
 
-<div class="w-full">
-  <section class="flex h-full w-full flex-col justify-start py-24">
+<div class="w-full bg-[#121212]">
+  <section class="flex h-full w-full flex-col justify-start pb-8 md:py-24">
     <div class="container flex max-w-screen-lg flex-col">
       <SectionTitle>Content</SectionTitle>
     </div>
-    <div
-      class="container relative m-auto grid w-full max-w-screen-lg gap-2 px-8 sm:gap-4 md:auto-rows-[18rem] md:grid-cols-2 lg:grid-cols-4 lg:gap-6"
-    >
-      <img
-        class="animate-fade-up-images col-span-1 row-span-2 h-full w-full cursor-pointer rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105 hover:contrast-[110%] lg:col-span-2"
+
+    <BentoGrid>
+      <BentoItem
+        type="image"
+        orientation="vertical"
         src="/images/img-4.webp"
         alt="Image 1"
       />
-      <img
-        class="animate-fade-up-images col-span-2 row-span-1 h-full w-full cursor-pointer rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105 hover:contrast-[110%] lg:col-span-2"
+      <BentoItem
+        type="image"
+        orientation="horizontal"
         src="/images/img-2.webp"
         alt="Image 2"
       />
-      <img
-        class="animate-fade-up-images col-span-2 row-span-1 h-full w-full cursor-pointer rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105 hover:contrast-[110%] lg:col-span-2"
+      <BentoItem
+        type="image"
+        orientation="horizontal"
         src="/images/img-1.webp"
         alt="Image 3"
       />
-      <img
-        class="animate-fade-up-images col-span-2 row-span-1 h-full w-full cursor-pointer rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105 hover:contrast-[110%] lg:col-span-4"
-        src="/images/img-3.webp"
-        alt="Image 4"
+      <BentoItem
+        type="video"
+        orientation="horizontal"
+        src="/video.webm"
+        alt="Video"
       />
-    </div>
+    </BentoGrid>
   </section>
 </div>
