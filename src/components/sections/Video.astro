@@ -1,17 +1,13 @@
 ---
 import { Icons } from "@/components/Icons";
+import { SoundButton } from "@/components/SoundButton";
 ---
 
 <div class="relative w-full">
   <section
     class="absolute z-20 flex h-full w-full items-center justify-start text-3xl md:items-end"
   >
-    <div
-      class="absolute bottom-16 left-12 cursor-pointer rounded-full bg-primary/25 p-2 backdrop-blur-md"
-      id="sound-button"
-    >
-      <Icons.sound className="h-6 w-6 shrink-0" />
-    </div>
+    <SoundButton client:load />
   </section>
   <video
     class="h-screen w-full object-cover object-top animate-duration-[2s] animate-ease-in-out"
