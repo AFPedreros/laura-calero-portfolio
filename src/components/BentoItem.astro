@@ -4,9 +4,10 @@ type Props = {
   orientation: "vertical" | "horizontal";
   src: string;
   alt?: string;
+  fullScreen?: boolean;
 };
 
-const { type, orientation, src, alt = "" } = Astro.props;
+const { type, orientation, src, alt = "", fullScreen = false } = Astro.props;
 const baseClass =
   "h-full w-full animate-fade-up-images rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105 hover:contrast-[110%]";
 const orientationClass =
@@ -14,9 +15,7 @@ const orientationClass =
     ? "col-span-2  row-span-2 "
     : "col-span-2 row-span-1 lg:col-span-2";
 const videoClass =
-  type === "video" && orientation === "horizontal"
-    ? "lg:col-span-4 lg:row-span-2"
-    : "";
+  type === "video" && fullScreen ? "lg:col-span-4 lg:row-span-2" : "";
 const classes = `${baseClass} ${orientationClass} ${videoClass}`;
 ---
 
