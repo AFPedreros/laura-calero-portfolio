@@ -6,6 +6,8 @@ import {
   Linkedin,
   Instagram,
   MapPin,
+  Volume2,
+  VolumeX,
   type LucideIcon,
 } from "lucide-react";
 
@@ -19,4 +21,6 @@ export const Icons = {
   mapPin: MapPin,
   linkedin: Linkedin,
   instagram: Instagram,
+  sound: Volume2,
+  mute: VolumeX,
 };

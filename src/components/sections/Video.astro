@@ -1,13 +1,17 @@
+---
+import { Icons } from "@/components/Icons";
+---
+
 <div class="relative w-full">
   <section
     class="absolute z-20 flex h-full w-full items-center justify-start text-3xl md:items-end"
   >
-    <h1
-      class="mx-8 mb-12 max-w-lg text-wrap rounded-md bg-black/50 p-4 font-semibold backdrop-blur-md md:ml-12 md:text-5xl"
+    <div
+      class="absolute bottom-16 left-12 cursor-pointer rounded-full bg-primary/25 p-2 backdrop-blur-md"
+      id="sound-button"
     >
-      Lorem ipsum dolor sit amet, <span class="text-primary">consectetur</span> adipiscing
-      elit.
-    </h1>
+      <Icons.sound className="h-6 w-6 shrink-0" />
+    </div>
   </section>
   <video
     class="h-screen w-full object-cover object-top animate-duration-[2s] animate-ease-in-out"
@@ -19,3 +23,18 @@
     preload="metadata"><source src="/video.webm" type="video/webm" /></video
   >
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("main-video") as HTMLVideoElement;
+    const soundButton = document.getElementById("sound-button");
+
+    soundButton?.addEventListener("click", () => {
+      if (video?.muted) {
+        video.muted = false;
+      } else {
+        video.muted = true;
+      }
+    });
+  });
+</script>
