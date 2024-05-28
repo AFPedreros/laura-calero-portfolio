@@ -6,7 +6,7 @@ export const SoundButton = () => {
 
   return (
     <button
-      className="absolute bottom-16 left-12 cursor-pointer rounded-full bg-primary/25 p-2 backdrop-blur-md"
+      className="absolute bottom-8 left-4 cursor-pointer rounded-full bg-primary/25 p-2 backdrop-blur-md md:bottom-16 md:left-8 lg:left-12"
       id="sound-button"
       onClick={() => setIsMuted(prev => !prev)}
     >
