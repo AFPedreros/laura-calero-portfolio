@@ -13,7 +13,10 @@ const orientationClass =
   orientation === "vertical"
     ? "col-span-2  row-span-2 "
     : "col-span-2 row-span-1 lg:col-span-2";
-const videoClass = type === "video" ? "lg:col-span-4 lg:row-span-2" : "";
+const videoClass =
+  type === "video" && orientation === "horizontal"
+    ? "lg:col-span-4 lg:row-span-2"
+    : "";
 const classes = `${baseClass} ${orientationClass} ${videoClass}`;
 ---
 
