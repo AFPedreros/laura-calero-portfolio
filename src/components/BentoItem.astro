@@ -1,15 +1,25 @@
 ---
+import { Icons } from "@/components/Icons";
+
 type Props = {
   type: "image" | "video";
   orientation: "vertical" | "horizontal";
   src: string;
   alt?: string;
   fullScreen?: boolean;
+  posterTime?: number;
 };
 
-const { type, orientation, src, alt = "", fullScreen = false } = Astro.props;
+const {
+  type,
+  orientation,
+  src,
+  alt = "",
+  fullScreen = false,
+  posterTime,
+} = Astro.props;
 const baseClass =
-  "h-full w-full animate-fade-up-images rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105 hover:contrast-[110%]";
+  "h-full relative w-full animate-fade-up-images rounded-md object-cover transition-all [animation-range:entry_10%_cover_20%] [animation-timeline:view()] hover:scale-105";
 const orientationClass =
   orientation === "vertical"
     ? "col-span-2  row-span-2 "
@@ -17,14 +27,26 @@ const orientationClass =
 const videoClass =
   type === "video" && fullScreen ? "lg:col-span-4 lg:row-span-2" : "";
 const classes = `${baseClass} ${orientationClass} ${videoClass}`;
+
+const posterUrl = `${src}#t=${posterTime}`;
 ---
 
 {type === "image" && <img class={classes} src={src} alt={alt} />}
 
 {
   type === "video" && (
-    <video class={classes} autoplay loop muted playsinline preload="metadata">
-      <source src={src} />
-    </video>
+    <a class={classes} href={src} target="_blank">
+      <video
+        class="h-full w-full rounded-md object-cover"
+        muted
+        playsinline
+        preload="metadata"
+      >
+        <source src={posterUrl} />
+      </video>
+      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-primary/25 p-2 backdrop-blur-md ">
+        <Icons.play className="h-10 translate-x-0.5 w-10 shrink-0" />
+      </div>
+    </a>
   )
 }
