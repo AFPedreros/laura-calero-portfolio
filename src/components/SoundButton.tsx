@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Icons } from "@/components/Icons";
 
 export const SoundButton = () => {
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   return (
     <button
